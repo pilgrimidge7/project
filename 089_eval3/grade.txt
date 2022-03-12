@@ -1,0 +1,393 @@
+Grading at 12/07/2021:20:04:31.942928
+For commit ID 9608726c7a8fc4f38b91abfd511f7ce3e839c29a
+Grading at Wed Dec  8 04:03:25 CST 2021
+
+=========================================================================
+Step 1
+
+Checking that cyoa-step1 compiles
+rm -f *~ cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 cyoa-step1.o cyoa-step2.o cyoa-step3.o cyoa-step4.o story.o page.o exception.o
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c page.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c exception.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c cyoa-step1.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c Story.cpp
+g++ -o cyoa-step1 cyoa-step1.o Story.o page.o exception.o
+rm Story.o cyoa-step1.o
++-----------------------------------------------------------------------+
+Test case 1
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 2
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 3
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 4
+Your program did not indicate a failure case
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 5
+Your program did not indicate a failure case
+  But it did abort and print to stderr
+                                                         [1.4/2]
++-----------------------------------------------------------------------+
+Test case 6
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 7
+Your program did not indicate a failure case
+  But it did abort and print to stderr
+                                                         [1.4/2]
++-----------------------------------------------------------------------+
+Test case 8
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 9
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 10
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 11
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 12
+Your file matched the expected output
+                                                         [2/2]
+
+Step 1 total                                             [16.8/20]
+
+=========================================================================
+Step 2
+
+Checking that cyoa-step2 compiles
+rm -f *~ cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 cyoa-step1.o cyoa-step2.o cyoa-step3.o cyoa-step4.o story.o page.o exception.o
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c page.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c exception.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c cyoa-step2.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c Story.cpp
+g++ -o cyoa-step2 cyoa-step2.o Story.o page.o exception.o
+rm cyoa-step2.o Story.o
++-----------------------------------------------------------------------+
+Test case 13
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 14
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 15
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 16
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 17
+Valgrind reported memory errors
+Your program did not indicate a failure case
+  But it did print to stderr
+                                                         [.35/1]
++-----------------------------------------------------------------------+
+Test case 18
+Your program did not indicate a failure case
+  But it did print to stderr
+                                                         [.5/1]
++-----------------------------------------------------------------------+
+Test case 19
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 20
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 21
+Valgrind reported memory errors
+Your program did not indicate a failure case
+  But it did print to stderr
+                                                         [.70/2]
++-----------------------------------------------------------------------+
+Test case 22
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 23
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 24
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 25
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 26
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 27
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 28
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 29
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 30
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 31
+Line_1_did_not_match
+Line_2_did_not_match
+Line_3_did_not_match
+Line_4_did_not_match
+Line_5_did_not_match
+Line_6_did_not_match
+Line_7_did_not_match
+Line_8_did_not_match
+Line_9_did_not_match
+Line_10_did_not_match
+Line_11_did_not_match
+Line_12_did_not_match
+Line_13_did_not_match
+Line_14_did_not_match
+Line_15_did_not_match
+Line_16_did_not_match
+Line_17_did_not_match
+Line_18_did_not_match
+Line_19_did_not_match
+Line_20_did_not_match
+Line_21_did_not_match
+Line_22_did_not_match
+Line_23_did_not_match
+Line_24_did_not_match
+Line_25_did_not_match
+Line_26_did_not_match
+Line_27_did_not_match
+Line_28_did_not_match
+Line_29_did_not_match
+Line_30_did_not_match
+Line_31_did_not_match
+Line_32_did_not_match
+Line_33_did_not_match
+Line_34_did_not_match
+Line_35_did_not_match
+Line_36_did_not_match
+Line_37_did_not_match
+Line_38_did_not_match
+Line_39_did_not_match
+Line_40_did_not_match
+Line_41_did_not_match
+Line_42_did_not_match
+Line_43_did_not_match
+Line_44_did_not_match
+Line_45_did_not_match
+Line_46_did_not_match
+Line_47_did_not_match
+Line_48_did_not_match
+Line_49_did_not_match
+Line_50_did_not_match
+Line_51_did_not_match
+Line_52_did_not_match
+Line_53_did_not_match
+Line_54_did_not_match
+Line_55_did_not_match
+Line_56_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
+
+Step 2 total                                             [25.55/30]
+
+=========================================================================
+Step 3
+
+Checking that cyoa-step3 compiles
+rm -f *~ cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 cyoa-step1.o cyoa-step2.o cyoa-step3.o cyoa-step4.o story.o page.o exception.o
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c page.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c exception.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c cyoa-step3.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c Story.cpp
+g++ -o cyoa-step3 cyoa-step3.o Story.o page.o exception.o
+rm cyoa-step3.o Story.o
++-----------------------------------------------------------------------+
+Test case 32
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 33
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 34
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 35
+Valgrind reported memory errors
+Your program did not indicate a failure case
+                                                         [0/0.5]
++-----------------------------------------------------------------------+
+Test case 36
+Your program did not indicate a failure case
+                                                         [0/0.5]
++-----------------------------------------------------------------------+
+Test case 37
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 38
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 39
+Your file matched the expected output
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 40
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 41
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 42
+Line_1_did_not_match
+Line_2_did_not_match
+Line_3_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 43
+Line_1_did_not_match
+Line_2_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 44
+Line_1_did_not_match
+Line_2_did_not_match
+Line_3_did_not_match
+Line_4_did_not_match
+Line_5_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 45
+Line_1_did_not_match
+Line_2_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 46
+Line_6_did_not_match
+Your file did not match the expected ouput
+                                                         [0/2]
++-----------------------------------------------------------------------+
+Test case 47
+Your file matched the expected output
+                                                         [2/2]
+
+Step 3 total                                             [9.0/20]
+
+=========================================================================
+Step 4
+
+Checking that cyoa-step4 compiles
+rm -f *~ cyoa-step1 cyoa-step2 cyoa-step3 cyoa-step4 cyoa-step1.o cyoa-step2.o cyoa-step3.o cyoa-step4.o story.o page.o exception.o
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c page.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c exception.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c cyoa-step4.cpp
+g++ -std=gnu++11 -pedantic -Wall -Werror -ggdb3 -c Story.cpp
+g++ -o cyoa-step4 cyoa-step4.o Story.o page.o exception.o
+rm cyoa-step4.o Story.o
++-----------------------------------------------------------------------+
+Test case 48
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 49
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 50
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 51
+Valgrind reported memory errors
+Your program did not indicate a failure case
+                                                         [0/0.5]
++-----------------------------------------------------------------------+
+Test case 52
+Your program did not indicate a failure case
+                                                         [0/0.5]
++-----------------------------------------------------------------------+
+Test case 53
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 54
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 55
+Your file matched the expected output
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 56
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 57
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 58
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 59
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 60
+Your file matched the expected output
+                                                         [2/2]
+
+Step 4 total                                             [19.0/20]
+
+=========================================================================
+Code quality
+
+Abstration:    2
+Comments:      3
+Formatting:    3
+Others:        2
+Comments from your grader:
+Great Job! Good to see you are familar with C++ and use good format and comments
+
+Quality total                                            [10/10]
+
+=========================================================================
+
+Overall Grade: 80

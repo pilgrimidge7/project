@@ -1,0 +1,6 @@
+1:goto page 1
+8:goto page 8
+12:goto page 12
+15:goto page 15
+# unreachable test
+unreachable test
